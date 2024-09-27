@@ -1,0 +1,250 @@
+[27-Sep-2024 17:16:21 UTC] PHP Warning:  Undefined variable $app in C:\Users\stpet\Desktop\pennentertainment\routes\loyalty\v1\routes.php on line 11
+[27-Sep-2024 17:16:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function post() on null in C:\Users\stpet\Desktop\pennentertainment\routes\loyalty\v1\routes.php:11
+Stack trace:
+#0 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\RouteGroup.php(67): {closure}()
+#1 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\RouteCollector.php(236): Slim\Routing\RouteGroup->collectRoutes()
+#2 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\RouteCollectorProxy.php(179): Slim\Routing\RouteCollector->group()
+#3 C:\Users\stpet\Desktop\pennentertainment\routes\loyalty\v1\routes.php(28): Slim\Routing\RouteCollectorProxy->group()
+#4 C:\Users\stpet\Desktop\pennentertainment\public\index.php(14): include('...')
+#5 {main}
+  thrown in C:\Users\stpet\Desktop\pennentertainment\routes\loyalty\v1\routes.php on line 11
+[27-Sep-2024 17:16:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\Models\Loyalty\V1\UserModel::insertUser() in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php:58
+Stack trace:
+#0 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(38): App\Controllers\Loyalty\V1\UserController->createUser()
+#1 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\Route.php(363): Slim\Handlers\Strategies\RequestResponse->__invoke()
+#2 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle()
+#3 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle()
+#4 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle()
+#5 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run()
+#6 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\RouteRunner->handle()
+#7 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle()
+#8 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(193): Slim\App->handle()
+#9 C:\Users\stpet\Desktop\pennentertainment\public\index.php(16): Slim\App->run()
+#10 {main}
+  thrown in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php on line 58
+[27-Sep-2024 17:21:46 UTC] PHP Fatal error:  Uncaught Error: Class "App\Models\Loyalty\V1\PDO" not found in C:\Users\stpet\Desktop\pennentertainment\src\models\loyalty\V1\UserModel.php:32
+Stack trace:
+#0 C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php(58): App\Models\Loyalty\V1\UserModel->createUser()
+#1 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(38): App\Controllers\Loyalty\V1\UserController->createUser()
+#2 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\Route.php(363): Slim\Handlers\Strategies\RequestResponse->__invoke()
+#3 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle()
+#4 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle()
+#5 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle()
+#6 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run()
+#7 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\RouteRunner->handle()
+#8 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle()
+#9 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(193): Slim\App->handle()
+#10 C:\Users\stpet\Desktop\pennentertainment\public\index.php(16): Slim\App->run()
+#11 {main}
+  thrown in C:\Users\stpet\Desktop\pennentertainment\src\models\loyalty\V1\UserModel.php on line 32
+[27-Sep-2024 17:22:52 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null in C:\Users\stpet\Desktop\pennentertainment\src\models\loyalty\V1\UserModel.php:33
+Stack trace:
+#0 C:\Users\stpet\Desktop\pennentertainment\src\models\loyalty\V1\UserModel.php(33): PDOStatement->execute()
+#1 C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php(58): App\Models\Loyalty\V1\UserModel->createUser()
+#2 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(38): App\Controllers\Loyalty\V1\UserController->createUser()
+#3 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\Route.php(363): Slim\Handlers\Strategies\RequestResponse->__invoke()
+#4 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle()
+#5 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle()
+#6 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle()
+#7 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run()
+#8 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\RouteRunner->handle()
+#9 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle()
+#10 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(193): Slim\App->handle()
+#11 C:\Users\stpet\Desktop\pennentertainment\public\index.php(16): Slim\App->run()
+#12 {main}
+  thrown in C:\Users\stpet\Desktop\pennentertainment\src\models\loyalty\V1\UserModel.php on line 33
+[27-Sep-2024 17:26:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Slim\Psr7\Request::post() in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php:35
+Stack trace:
+#0 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(38): App\Controllers\Loyalty\V1\UserController->createUser()
+#1 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\Route.php(363): Slim\Handlers\Strategies\RequestResponse->__invoke()
+#2 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle()
+#3 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle()
+#4 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle()
+#5 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run()
+#6 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\RouteRunner->handle()
+#7 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle()
+#8 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(193): Slim\App->handle()
+#9 C:\Users\stpet\Desktop\pennentertainment\public\index.php(16): Slim\App->run()
+#10 {main}
+  thrown in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php on line 35
+[27-Sep-2024 17:28:09 UTC] PHP Warning:  Undefined array key "name]" in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php on line 35
+[27-Sep-2024 17:28:24 UTC] PHP Parse error:  Unclosed '(' does not match ']' in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php on line 35
+[27-Sep-2024 17:31:14 UTC] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php on line 35
+[27-Sep-2024 17:43:54 UTC] PHP Warning:  require(Slim/Slim.php): Failed to open stream: No such file or directory in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php on line 8
+[27-Sep-2024 17:43:54 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'Slim/Slim.php' (include_path='.;C:\php\pear') in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php:8
+Stack trace:
+#0 C:\Users\stpet\Desktop\pennentertainment\vendor\composer\ClassLoader.php(478): include()
+#1 C:\Users\stpet\Desktop\pennentertainment\vendor\composer\ClassLoader.php(346): Composer\Autoload\includeFile()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\CallableResolver.php(140): class_exists()
+#4 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\CallableResolver.php(97): Slim\CallableResolver->resolveSlimNotation()
+#5 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\CallableResolver.php(70): Slim\CallableResolver->resolveByPredicate()
+#6 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\Route.php(345): Slim\CallableResolver->resolveRoute()
+#7 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle()
+#8 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle()
+#9 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle()
+#10 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run()
+#11 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\RouteRunner->handle()
+#12 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle()
+#13 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(193): Slim\App->handle()
+#14 C:\Users\stpet\Desktop\pennentertainment\public\index.php(16): Slim\App->run()
+#15 {main}
+  thrown in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php on line 8
+[27-Sep-2024 17:44:33 UTC] PHP Warning:  require(Slim/Slim.php): Failed to open stream: No such file or directory in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php on line 8
+[27-Sep-2024 17:44:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'Slim/Slim.php' (include_path='.;C:\php\pear') in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php:8
+Stack trace:
+#0 C:\Users\stpet\Desktop\pennentertainment\vendor\composer\ClassLoader.php(478): include()
+#1 C:\Users\stpet\Desktop\pennentertainment\vendor\composer\ClassLoader.php(346): Composer\Autoload\includeFile()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\CallableResolver.php(140): class_exists()
+#4 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\CallableResolver.php(97): Slim\CallableResolver->resolveSlimNotation()
+#5 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\CallableResolver.php(70): Slim\CallableResolver->resolveByPredicate()
+#6 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\Route.php(345): Slim\CallableResolver->resolveRoute()
+#7 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle()
+#8 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle()
+#9 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle()
+#10 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run()
+#11 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\RouteRunner->handle()
+#12 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle()
+#13 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(193): Slim\App->handle()
+#14 C:\Users\stpet\Desktop\pennentertainment\public\index.php(16): Slim\App->run()
+#15 {main}
+  thrown in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php on line 8
+[27-Sep-2024 17:45:37 UTC] PHP Warning:  require(Slim/Slim.php): Failed to open stream: No such file or directory in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php on line 8
+[27-Sep-2024 17:45:37 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'Slim/Slim.php' (include_path='.;C:\php\pear') in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php:8
+Stack trace:
+#0 C:\Users\stpet\Desktop\pennentertainment\vendor\composer\ClassLoader.php(478): include()
+#1 C:\Users\stpet\Desktop\pennentertainment\vendor\composer\ClassLoader.php(346): Composer\Autoload\includeFile()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#3 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\CallableResolver.php(140): class_exists()
+#4 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\CallableResolver.php(97): Slim\CallableResolver->resolveSlimNotation()
+#5 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\CallableResolver.php(70): Slim\CallableResolver->resolveByPredicate()
+#6 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\Route.php(345): Slim\CallableResolver->resolveRoute()
+#7 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle()
+#8 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle()
+#9 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle()
+#10 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run()
+#11 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\RouteRunner->handle()
+#12 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle()
+#13 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(193): Slim\App->handle()
+#14 C:\Users\stpet\Desktop\pennentertainment\public\index.php(16): Slim\App->run()
+#15 {main}
+  thrown in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php on line 8
+[27-Sep-2024 17:51:40 UTC] PHP Warning:  Undefined array key 0 in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php on line 36
+[27-Sep-2024 17:52:10 UTC] PHP Fatal error:  Uncaught TypeError: explode(): Argument #1 ($separator) must be of type string, array given in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php:35
+Stack trace:
+#0 C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php(35): explode()
+#1 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(38): App\Controllers\Loyalty\V1\UserController->createUser()
+#2 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\Route.php(363): Slim\Handlers\Strategies\RequestResponse->__invoke()
+#3 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle()
+#4 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle()
+#5 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle()
+#6 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run()
+#7 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\RouteRunner->handle()
+#8 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle()
+#9 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(193): Slim\App->handle()
+#10 C:\Users\stpet\Desktop\pennentertainment\public\index.php(16): Slim\App->run()
+#11 {main}
+  thrown in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php on line 35
+[27-Sep-2024 17:52:27 UTC] PHP Fatal error:  Uncaught TypeError: explode(): Argument #2 ($string) must be of type string, array given in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php:35
+Stack trace:
+#0 C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php(35): explode()
+#1 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(38): App\Controllers\Loyalty\V1\UserController->createUser()
+#2 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\Route.php(363): Slim\Handlers\Strategies\RequestResponse->__invoke()
+#3 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle()
+#4 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle()
+#5 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle()
+#6 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run()
+#7 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\RouteRunner->handle()
+#8 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle()
+#9 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(193): Slim\App->handle()
+#10 C:\Users\stpet\Desktop\pennentertainment\public\index.php(16): Slim\App->run()
+#11 {main}
+  thrown in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php on line 35
+[27-Sep-2024 17:53:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controllers\Loyalty\V1\UserController::getParsedBody() in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php:36
+Stack trace:
+#0 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(38): App\Controllers\Loyalty\V1\UserController->createUser()
+#1 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\Route.php(363): Slim\Handlers\Strategies\RequestResponse->__invoke()
+#2 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle()
+#3 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle()
+#4 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle()
+#5 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run()
+#6 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\RouteRunner->handle()
+#7 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle()
+#8 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(193): Slim\App->handle()
+#9 C:\Users\stpet\Desktop\pennentertainment\public\index.php(16): Slim\App->run()
+#10 {main}
+  thrown in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php on line 36
+[27-Sep-2024 18:03:41 UTC] PHP Fatal error:  Uncaught Slim\Exception\HttpMethodNotAllowedException: Method not allowed. Must be one of: GET, POST in C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php:79
+Stack trace:
+#0 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting()
+#1 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\RouteRunner->handle()
+#2 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle()
+#3 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(193): Slim\App->handle()
+#4 C:\Users\stpet\Desktop\pennentertainment\public\index.php(16): Slim\App->run()
+#5 {main}
+  thrown in C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php on line 79
+[27-Sep-2024 18:12:34 UTC] PHP Fatal error:  Uncaught Slim\Exception\HttpMethodNotAllowedException: Method not allowed. Must be one of: DELETE in C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php:79
+Stack trace:
+#0 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting()
+#1 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\RouteRunner->handle()
+#2 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle()
+#3 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(193): Slim\App->handle()
+#4 C:\Users\stpet\Desktop\pennentertainment\public\index.php(16): Slim\App->run()
+#5 {main}
+  thrown in C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php on line 79
+[27-Sep-2024 18:12:53 UTC] PHP Fatal error:  Uncaught Slim\Exception\HttpMethodNotAllowedException: Method not allowed. Must be one of: POST in C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php:79
+Stack trace:
+#0 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting()
+#1 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\RouteRunner->handle()
+#2 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle()
+#3 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(193): Slim\App->handle()
+#4 C:\Users\stpet\Desktop\pennentertainment\public\index.php(16): Slim\App->run()
+#5 {main}
+  thrown in C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php on line 79
+[27-Sep-2024 18:13:47 UTC] PHP Fatal error:  Uncaught Slim\Exception\HttpMethodNotAllowedException: Method not allowed. Must be one of: POST in C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php:79
+Stack trace:
+#0 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting()
+#1 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\RouteRunner->handle()
+#2 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle()
+#3 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(193): Slim\App->handle()
+#4 C:\Users\stpet\Desktop\pennentertainment\public\index.php(16): Slim\App->run()
+#5 {main}
+  thrown in C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php on line 79
+[27-Sep-2024 18:15:03 UTC] PHP Fatal error:  Uncaught Slim\Exception\HttpMethodNotAllowedException: Method not allowed. Must be one of: POST in C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php:79
+Stack trace:
+#0 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting()
+#1 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\RouteRunner->handle()
+#2 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle()
+#3 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(193): Slim\App->handle()
+#4 C:\Users\stpet\Desktop\pennentertainment\public\index.php(16): Slim\App->run()
+#5 {main}
+  thrown in C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php on line 79
+[27-Sep-2024 18:17:13 UTC] PHP Fatal error:  Uncaught Slim\Exception\HttpMethodNotAllowedException: Method not allowed. Must be one of: POST in C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php:79
+Stack trace:
+#0 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting()
+#1 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\RouteRunner->handle()
+#2 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle()
+#3 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(193): Slim\App->handle()
+#4 C:\Users\stpet\Desktop\pennentertainment\public\index.php(16): Slim\App->run()
+#5 {main}
+  thrown in C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php on line 79
+[27-Sep-2024 18:19:31 UTC] PHP Fatal error:  Uncaught FastRoute\BadRouteException: Cannot register two routes matching "/loyalty/api/v1/users" for method "GET" in C:\Users\stpet\Desktop\pennentertainment\vendor\nikic\fast-route\src\DataGenerator\RegexBasedAbstract.php:86
+Stack trace:
+#0 C:\Users\stpet\Desktop\pennentertainment\vendor\nikic\fast-route\src\DataGenerator\RegexBasedAbstract.php(30): FastRoute\DataGenerator\RegexBasedAbstract->addStaticRoute()
+#1 C:\Users\stpet\Desktop\pennentertainment\vendor\nikic\fast-route\src\RouteCollector.php(44): FastRoute\DataGenerator\RegexBasedAbstract->addRoute()
+#2 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\Dispatcher.php(34): FastRoute\RouteCollector->addRoute()
+#3 C:\Users\stpet\Desktop\pennentertainment\vendor\nikic\fast-route\src\functions.php(25): Slim\Routing\Dispatcher->Slim\Routing\{closure}()
+#4 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\Dispatcher.php(52): FastRoute\simpleDispatcher()
+#5 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\Dispatcher.php(65): Slim\Routing\Dispatcher->createDispatcher()
+#6 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\RouteResolver.php(46): Slim\Routing\Dispatcher->dispatch()
+#7 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(95): Slim\Routing\RouteResolver->computeRoutingResults()
+#8 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(61): Slim\Middleware\RoutingMiddleware->resolveRoutingResultsFromRequest()
+#9 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting()
+#10 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\RouteRunner->handle()
+#11 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle()
+#12 C:\Users\stpet\Desktop\pennentertainment\vendor\slim\slim\Slim\App.php(193): Slim\App->handle()
+#13 C:\Users\stpet\Desktop\pennentertainment\public\index.php(16): Slim\App->run()
+#14 {main}
+  thrown in C:\Users\stpet\Desktop\pennentertainment\vendor\nikic\fast-route\src\DataGenerator\RegexBasedAbstract.php on line 86
+[27-Sep-2024 18:42:54 UTC] PHP Parse error:  syntax error, unexpected token ";" in C:\Users\stpet\Desktop\pennentertainment\src\controllers\loyalty\V1\UserController.php on line 81
