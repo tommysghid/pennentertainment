@@ -1,8 +1,1 @@
-[27-Sep-2024 18:11:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wget() in C:\Users\stpet\Desktop\pennentertainment\tests\deleteuserTest.php:3
-Stack trace:
-#0 {main}
-  thrown in C:\Users\stpet\Desktop\pennentertainment\tests\deleteuserTest.php on line 3
-[27-Sep-2024 18:12:19 UTC] PHP Parse error:  syntax error, unexpected identifier "file_get_contents" in C:\Users\stpet\Desktop\pennentertainment\tests\deleteuserTest.php on line 3
-[27-Sep-2024 18:13:18 UTC] PHP Deprecated:  Return type of Symfony\Component\Console\Helper\HelperSet::getIterator() should either be compatible with IteratorAggregate::getIterator(): Traversable, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in phar://C:/ProgramData/ComposerSetup/bin/composer.phar/vendor/symfony/console/Helper/HelperSet.php on line 112
-[27-Sep-2024 18:23:57 UTC] PHP Deprecated:  Return type of Symfony\Component\Console\Helper\HelperSet::getIterator() should either be compatible with IteratorAggregate::getIterator(): Traversable, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in phar://C:/ProgramData/ComposerSetup/bin/composer.phar/vendor/symfony/console/Helper/HelperSet.php on line 112
-[27-Sep-2024 18:49:31 UTC] PHP Deprecated:  Return type of Symfony\Component\Console\Helper\HelperSet::getIterator() should either be compatible with IteratorAggregate::getIterator(): Traversable, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in phar://C:/ProgramData/ComposerSetup/bin/composer.phar/vendor/symfony/console/Helper/HelperSet.php on line 112
+
