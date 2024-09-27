@@ -17,9 +17,10 @@
 
 **General Code Process/Flow**
 1. public index.php loads all the routes
-2. routes call the controll functions listed in the route
+2. routes call the control functions listed in the route
 3. controller functions invoke database functions
-4. controllers return json strings back to CLI/Browser
+4. database functions executed by connection created in databse model with config parameters
+5. controllers return json strings back to CLI/Browser
    
 **Testing deleting a user from the CLI**
 ![image](https://github.com/user-attachments/assets/2908b9a9-4ef1-4d66-98b7-9f0e8ca21282)
