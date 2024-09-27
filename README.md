@@ -33,7 +33,12 @@
 2. Logging errors and using try catch statements
 3. Authorization/authentication (e.g. for deletes)
 4. Singleton for DB connection
-5. Using DI for Slim 4
+5. Using DI plugin for Slim 4
+6. Refactor for language strings for errors (external and internal facing)
+7. Set up some viewers for error templating esp if external app
+8. API documentation (what is required/returned etc) not just code comments
+9. Using maybe eloquent for true database models
+10. CSRF plugin
 
 
 
